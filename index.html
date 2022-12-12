@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Lexend+Deca:wght@200&display=swap"
+    rel="stylesheet">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="flex md:items-center bg-veryDark text-white font-sansText" id="app">
+    <div class="container mx-auto px-6 py-16 md:px-16">
+      <div class="flex w-full gap-4 bg-darkBlue flex-col-reverse rounded-lg overflow-hidden md:flex-row">
+        <div class="px-6 py-8 text-center md:text-left md:w-1/2 lg:p-16">
+          <h1 class="text-3xl lg:text-4xl font-sansHeading font-bold mb-6">Get <span
+              class="text-softViolet">insights</span> that
+            help
+            your
+            business
+            grow.</h1>
+          <p class="text-white opacity-75 md:max-w-sm font-sansHeading mb-10 md:mb-14 lg:mb-24">Discover the
+            benefits of
+            data
+            analytics
+            and
+            make better
+            decisions
+            regarding revenue, customer
+            experience, and
+            overall efficiency.</p>
+          <div class="table-auto text-center grid md:grid-cols-3 md:text-left gap-8 lg:gap-16">
+            <div>
+              <p class="text-2xl font-sansHeading font-bold">10k+</p>
+              <h2 class="text-xs font-extralight tracking-widest text-white opacity-60 uppercase">Companies</h2>
+            </div>
+            <div>
+              <p class="text-2xl font-sansHeading font-bold">314</p>
+              <h2 class="text-xs font-extralight tracking-widest text-white opacity-60 uppercase">Templates</h2>
+            </div>
+            <div>
+              <p class="text-2xl font-sansHeading font-bold">12M+</p>
+              <h2 class="text-xs font-extralight tracking-widest text-white opacity-60 uppercase">Queries</h2>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2 md:h-auto h-60 relative">
+          <div class="absolute w-full h-full bg-softViolet opacity-75 z-10 mix-blend-multiply"></div>
+          <picture>
+            <source srcset="./image-header-mobile.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="./image-header-mobile.jpg" media="(max-width: 768px)" type="image/jpeg">
+            <source srcset="./image-header-desktop.webp" type="image/webp">
+            <img class="absolute w-full h-full object-cover object-top md:object-right lg:object-top" width="540"
+              height="446" src="./image-header-desktop.jpg" alt="Team members">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
